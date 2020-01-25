@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>dreamCity — сервис анализа и мониторинга комфорта жизни в городах</title>
+</head>
+
+<body class="antialiased">
+    <!-- top color bar -->
+    <div class="h-2 bg-indigo-600 w-full z-20 gradient"></div>
+
+    <div class="w-full z-20">
+        <!-- Nav Bar -->
+        <nav class="font-sans text-center flex justify-between my-4 mx-auto container  z-50 relative">
+            <a href="/" class="toggleColour text-gray-700 no-underline hover:no-underline font-bold text-2xl lg:text-4xl pb-1 mx-auto sm:mx-0">
+                <img src="./images/default-monochrome-black.svg" class="w-48" alt="dreamCity Logo">
+            </a>
+            <ul class="text-sm text-grey-dark list-reset flex items-center">
+                <button class="text-white ml-4 py-2 px-6 rounded bg-gray-800 font-bold hidden sm:block bg-indigo-600" id="signup_btn">Быть в курсе</button>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section class="font-sans container m-auto flex px-5 hero">
+
+        <div class="flex-1 flex items-start flex-col justify-center">
+            <h1 class="my-4 font-medium mt-40 lg:mt-32 lg:mt-0 text-center w-full px-2 text-gray-800 text-2xl xl:text-3xl lg:px-0 font-black mb-8 md:w-full lg:text-left lg:-mt-4 h-auto xl:h-24">dreamCity – комфорт жизни
+                <span id="title" class="text-pink-500"></span></h1>
+            <p class="leading-normal mb-12 pr-36 text-normal xl:text-lg text-center w-full px-16 text-gray-600 leading-loose xl:pr-32 md:text-center md:px-32 sm:text-center lg:text-left lg:px-0">dreamCity – сервис, который позволяет выбрать комфортное место жизни и отслеживать изменения, происходящие с ним. С помощью dreamCity люди могут выбрать оптимальный район для жизни потратив минимум времени и усилий</p>
+            <form class="block sm:flex w-full px-0 sm:px-16 xl:pr-32 lg:pr-16 md:px-32 lg:px-0" action="https://none.us18.list-manage.com/subscribe/post?u=eababad065483e9867682de1f&amp;id=0303eb16f1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
+                <input class="bg-white border-2 border-gray-300 rounded py-2 px-4 block w-full focus:outline-none focus:border-indigo-600 text-black input" id="email" type="email" name="EMAIL" autofocus="" placeholder="jane@example.com" required>
+                <input type="hidden" name="b_eababad065483e9867682de1f_0303eb16f1" tabindex="-1" value="">
+                <button class="hover:bg-grey-darker text-white ml-0 sm:ml-4 py-2 px-6 rounded bg-indigo-600 font-bold w-full sm:w-2/3 mt-4 sm:mt-0">Отправить</button>
+            </form>
+            <div class="mt-8 flex text-sm border border-gray-200 rounded-full p-2 text-pink-500 text-sm mx-auto lg:mx-0 mb-12 lg:mb-0"><span class="bg-pink-500 text-white rounded-full px-3 h-6 flex items-center hidden xl:inline">Оставте почту</span> <span class="px-2 flex items-center"><span class="hidden sm:inline">для информации по прогрессу</span> и получения раннего доступа!</span></div>
+        </div>
+        <div class="flex-1 hidden items-start flex-col justify-center lg:flex relative pl-16">
+            <img src="./images/template_illustratio.svg" class="w-full object-cover relative bottom-0 z-10 mt-32" alt="We Teach Hero Image">
+        </div>
+
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-gray-100">
+
+        <div class="container mx-auto mt-0 pb-4 md:pb-24 px-5">
+
+            <h2 class="w-full pt-8 sm:pt-16 pt-4 text-2xl sm:text-4xl font-bold text-left text-indigo-500 uppercase">Наши особенности</h2>
+            <p class="w-full mb-8 md:mb-16 text-xl text-gray-500">Узнайте, чем мы отличаемся от остальных.</p>
+
+            <div class="block md:flex flex-wrap mb-16 bg-white rounded shadow overflow-hidden">
+                <div class="w-full md:w-1/2">
+                    <img src="./stripe.png" class="w-full">
+                </div>
+                <div class="w-full md:w-1/2 py-12 md:py-0 flex flex-col justify-center px-8 sm:px-16">
+                    <h3 class="text-xl lg:text-3xl font-bold leading-none mb-3 mt-16 text-gray-700 -mt-1">Integrate your own payments</h3>
+                    <p class="text-gray-600 text-xs">You can integrate your Stripe or Braintree payment system right into your course. This means when someone pays for your course, the money will be deposited directly into your account!</p>
+                </div>
+
+            </div>
+
+            <div class="block md:flex flex-wrap mb-16 bg-white rounded shadow overflow-hidden">
+
+                <div class="w-full md:w-1/2 py-12 md:py-0 flex flex-col justify-center px-8 sm:px-16">
+                    <h3 class="text-xl lg:text-3xl font-bold leading-none mb-3 mt-16 text-gray-700 -mt-1">Developer focused courses</h3>
+                    <p class="text-gray-600 text-xs">Display code examples and allow users to download files. WeTeach is focused on developers teaching other people to become developers.</p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="./screenshot.png" class="w-full">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer Email Section -->
+    <section class="text-center pt-32 pb-40 bg-pink-500 relative">
+
+        <div class="container mx-auto text-center px-5">
+            <h1 class="w-full my-2 text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight text-left sm:text-center text-white">Зарегистрируйтесь, чтобы получить уведомления, когда мы выпустимся!</h1>
+            <h3 class="my-4 mb-6 lg:mb-4 text-xl lg:text-3xl leading-tight text-gray-200 text-left sm:text-center">Enter your email below to request early access.</h3>
+            <form class="block sm:flex w-full px-0 sm:px-16 xl:pr-6 lg:pr-16 md:px-32 lg:px-0 lg:w-1/2 lg:m-auto lg:mt-8" action="https://none.us18.list-manage.com/subscribe/post?u=eababad065483e9867682de1f&amp;id=0303eb16f1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
+                <input class="bg-white border-2 border-white rounded py-2 px-4 block w-full focus:outline-none focus:border-indigo-400 text-black input" type="email" autofocus="" name="EMAIL" placeholder="jane@example.com">
+                <input type="hidden" name="b_eababad065483e9867682de1f_0303eb16f1" tabindex="-1" value="">
+                <button class="hover:bg-grey-darker text-white ml-0 sm:ml-4 py-2 px-6 rounded bg-gray-800 font-bold w-full sm:w-2/3 mt-4 sm:mt-0">Отправить</button>
+            </form>
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script>
+        document.getElementById('signup_btn').addEventListener('click', function () {
+            document.getElementById('email').focus();
+        });
+
+        var typed = new Typed('#title', {
+            strings: ["для Покупателей/арендаторов жилья, а также риэлторов.", "для людей заботящихся о своем здоровье.", "для тех ком у важно где он живет чем дышит и где гуляет."],
+            typeSpeed: 60,
+            backSpeed: 20,
+            backDelay: 1500,
+            startDelay: 0,
+            loop: true
+        });
+    </script>
+    <style type="text/css" data-typed-js-css="true">
+        .typed-cursor {
+            opacity: 1;
+        }
+
+        .typed-cursor.typed-cursor--blink {
+            animation: typedjsBlink 0.7s infinite;
+            -webkit-animation: typedjsBlink 0.7s infinite;
+            animation: typedjsBlink 0.7s infinite;
+        }
+
+        @keyframes typedjsBlink {
+            50% {
+                opacity: 0.0;
+            }
+        }
+
+        @-webkit-keyframes typedjsBlink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.gradient {
+  background: linear-gradient(45deg, #667eea, #ed64a6);
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 210px;
+  width: 100%;
+}
+
+.btn {
+  color: #000000;
+  font-weight: 400;
+  height: 40px;
+  font-size: 14px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #0056d3;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.btn:hover {
+  background-color: #0056d3;
+  color: #fff;
+}
+
+.btn--blue {
+    color: #fff;
+    background-color: #0056d3;
+    font-weight: 600;
+    font-size: 14px;
+    width: 190px;
+    height: 60px;
+    padding: 0 15px;
+    display: block;
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero {
+  padding: 90px 0;
+  min-height: 560px;
+}
+
+.hero__wrapper > * {
+padding: 0 10px;
+}
+
+.hero__info {
+    flex-basis: 40%;
+}
+.hero__image {
+    margin-left:  auto;
+    flex-basis: 50%;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.hero__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__descr {
+  font-size: 16px;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  opacity: 0.45;
+}
+
+.hero__title {
+    margin: 0;
+    color: #000000;
+    font-size: 35px;
+    line-height: 1.35;
+    font-weight: 500;
+}
+
+#mc_embed_signup_scroll {
+    display: flex;
+}
+
+.input {
+    flex: 2;
+    font-size: 15px;
+    font-weight: 400;
+    height: 50px;
+    margin: 0;
+    font-size: 100%;
+    height: 60px;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1.33;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #a5b9d9;
+}
+
+.form {
+    display: flex;
+}
+
+
